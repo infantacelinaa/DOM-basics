@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <h1 id="two">JavaScript</h1>
+    <button id="one" onclick="change()">Submit</button>
+    <script>
+        function change(){
+            document.getElementById("two").style.color = "green";
+            document.getElementById("one").addEventListener("click", function() { alert("Color changed");});
+        }
+    </script>
+</body>
+</html>

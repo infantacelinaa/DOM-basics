@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <p>Enter the percentage</p>
+    <input id="perc">
+    <button type="button" onclick="Validate()">Submit</button>
+    <p id="result">Remarks</p>
+    <script>
+        function Validate()
+        {
+            var score = document.getElementById("perc").value;
+            var result = document.getElementById("result");
+            var a = result.textContent;
+            // console.log(score)
+            if(score>=80 && score<=100)
+            {
+                result.textContent = "Best";
+                document.body.style.color="green";
+            }
+            else if(score>=60 && score<=79)
+            {
+                result.textContent = "Good";
+                document.body.style.color="blue";
+            }
+            else if(score>=50 && score<=59)
+            {
+                result.textContent = "Better";
+                document.body.style.color="orange";
+            }
+            else{
+                result.textContent = "Not Eligible";
+                document.body.style.color="red";
+            }
+        }
+    </script>
+</body>
+</html>
